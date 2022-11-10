@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="./my_reset.css" />
+    <link rel="stylesheet" href="slecto.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      $(function () {
+        $(".sec2_right>button").click(function () {
+          $(".sec2_right>button").removeClass("on");
+          $(this).addClass("on");
+        });
+        $(".menu_btn>button").click(function () {
+          let btn = $(this).index();
+          $(".menu_btn>button, .menu>article").removeClass("on");
+          $(this).addClass("on");
+          $(".menu>article").eq(btn).addClass("on");
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="floating">
+      <div>
+        <div class="img">
+          <img src="./image/floating/Group 55.svg" alt="" />
+        </div>
+        <span>창업문의</span>
+        <p><strong>1600-5649</strong></p>
+        <a href="#"></a>
+      </div>
+      <div>
+        <div class="img">
+          <img src="./image/floating/Frame (1).svg" alt="" />
+        </div>
+        <p>추천점포</p>
+        <a href="#"></a>
+      </div>
+      <div>
+        <div class="img"><img src="./image/floating/Frame.svg" alt="" /></div>
+        <p>고객센터</p>
+        <a href="#"></a>
+      </div>
+      <div class="top">
+        <div class="img">
+          <img src="./image/floating/Frame (2).svg" alt="" />
+        </div>
+        <p>TOP</p>
+        <a href="#"></a>
+      </div>
+    </div>
+
+    <header class="hd">
+      <nav class="nav">
+        <h1>
+          <img src="./image/simbol.png" alt="logo" />
+          <a href="#"></a>
+        </h1>
+        <ul class="gnb">
+          <li><a href="">셀렉토커피</a></li>
+          <li><a href="">메뉴</a></li>
+          <li><a href="">창업안내</a></li>
+          <li><a href="">매장안내</a></li>
+          <li><a href="">이벤트</a></li>
+          <li><a href="">회사소개</a></li>
+        </ul>
+        <div class="icons">
+          <div class="btn_fb">
+            <a href="#"><img src="./image/페이스북.svg" alt="" /></a>
+          </div>
+          <div class="btn_ins">
+            <a href="#"><img src="./image/인스타.svg" alt="" /></a>
+          </div>
+          <div class="btn_nav">
+            <a href="#"><img src="./image/블로그.svg" alt="" /></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="sec1">
+      <!-- css백그라운드 배경이미지적용 -->
+      <div class="inner">
+        <div class="sec1_main">
+          <p>새로운 커피를 경험할 수 있는 가장 특별한 공간,</p>
+          <h2>SELECTO COFFEE</h2>
+          <a href="#">창업문의</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec2">
+      <h2>BRAND</h2>
+      <div class="sec2_lef">
+        <img src="./image/simbol.png" alt="" />
+        <h2>SELECTO COFFEE</h2>
+        <p>SELECTO YOUR AMERICANO</p>
+      </div>
+      <article class="sec2_right">
+        <button class="btn1 on">셀렉토</button>
+        <article class="t1">
+          <ul>
+            <li>
+              <p class="dec">
+                Selecto는 스페인어로 ‘엄선된’이란 의미를 지니고 있습니다.<br />
+                그리고 영어의 Select(선택)이라는 의미도함께 내포하고
+                있습니다.<br />
+                이렇듯 셀렉토커피는 최고의 커피를 고객 취향에 맞게 제공하려는<br />
+                셀렉토커피의 의지를 나타내고 있습니다.
+              </p>
+              <a href="#" class="read_more">Read More</a>
+            </li>
+          </ul>
+        </article>
+        <button class="btn2">로스팅</button>
+        <article class="t2">
+          <ul>
+            <li>
+              <p class="dec">
+                로스팅 에 관한 내용 Selecto는 스페인어로 ‘엄선된’이란 의미를
+                지니고 있습니다.<br />
+                그리고 영어의 Select(선택)이라는 의미도함께 내포하고
+                있습니다.<br />
+                이렇듯 셀렉토커피는 최고의 커피를 고객 취향에 맞게 제공하려는<br />
+                셀렉토커피의 의지를 나타내고 있습니다.
+              </p>
+              <a href="#" class="read_more">Read More</a>
+            </li>
+          </ul>
+        </article>
+        <button class="btn3">7%</button>
+        <article class="t3">
+          <ul>
+            <li>
+              <p class="dec">
+                7% 에 관한 내용 Selecto는 스페인어로 ‘엄선된’이란 의미를 지니고
+                있습니다.<br />
+                그리고 영어의 Select(선택)이라는 의미도함께 내포하고
+                있습니다.<br />
+                이렇듯 셀렉토커피는 최고의 커피를 고객 취향에 맞게 제공하려는<br />
+                셀렉토커피의 의지를 나타내고 있습니다.
+              </p>
+              <a href="#" class="read_more">Read More</a>
+            </li>
+          </ul>
+        </article>
+      </article>
+      <div class="img">
+        <img src="./image/커피체계도.png" alt="커피체계도" />
+      </div>
+    </section>
+
+    <section class="sec3">
+      <article class="menu_list">
+        <h2>MENU</h2>
+        <div class="menu_btn">
+          <button class="on">New</button>
+          <button>Hot</button>
+          <button>Ice</button>
+          <button>Dessert</button>
+        </div>
+
+        <div class="menu">
+          <article class="con1 on">
+            <div class="swiper slide1">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <div class="inner">
+                    <img src="./image/hot/20221020152223_yh30mp.png" alt="" />
+                    <div class="con_menu">
+                      <p>돌체 트리 밀크티</p>
+                      <p>Dolce Tree Milk Tea</p>
+                      <span>
+                        부드럽고 달콤 쌉싸름한 돌체 밀크티에 <br />
+                        아몬드 토핑으로 트리모양을 연출하여 <br />
+                        비주얼까지 사로잡는 음료</span
+                      >
+                      <a href="#">자세히보기</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="inner">
+                    <img src="./image/hot/20221020151922_q99xnb.png" alt="" />
+                    <div class="con_menu">
+                      <p>아이스 돌체 트리 밀크티</p>
+                      <p>Iced Dolce Tree Milk Tea</p>
+                      <span>
+                        부드럽고 달콤 쌉싸름한 돌체 밀크티에 <br />
+                        아몬드 토핑으로 트리모양을 연출하여 <br />
+                        비주얼까지 사로잡는 음료
+                      </span>
+                      <a href="#">자세히보기</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="inner">
+                    <img src="./image/hot/20221024140547_tlmyfj.png" alt="" />
+                    <div class="con_menu">
+                      <p>쥬빌레 밀크 쉐이크</p>
+                      <p>Jubilee milk shake</p>
+                      <span>
+                        상큼한 체리와 바닐라 아이스크림을 <br />
+                        그대로 갈아 섞어먹는 부드러운 쉐이크
+                      </span>
+                      <a href="#">자세히보기</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="inner">
+                    <img src="./image/hot/20221024140222_lwusgt.png" alt="" />
+                    <div class="con_menu">
+                      <p>아이스 체리쉬 뱅쇼</p>
+                      <p>Iced Cherrysh Vin chaud</p>
+                      <span>
+                        체리와 블루베리를 중심으로 <br />
+                        새콤달콤한 과일의 풍미를 느낄 수 있는 <br />
+                        제철 뱅쇼 음료
+                      </span>
+                      <a href="#">자세히보기</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="inner">
+                    <img src="./image/hot/20221020100205_2cy63h.png" alt="" />
+                    <div class="con_menu">
+                      <p>카페모카</p>
+                      <p>Cafe Mocha</p>
+                      <span>
+                        초콜릿과 에스프레소를 섞고, <br />
+                        부드러운 휘핑 크림을 얹은 에스프레소 음료
+                      </span>
+                      <a href="#">자세히보기</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-button-next next1"></div>
+            <div class="swiper-button-prev prev1"></div>
+          </article>
+          <article class="con2">
+            <div class="swiper slide2">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <div class="inner">
+                    <img src="./image/rhot/뉴트로크렘.png" alt="" />
+                    <div class="con_menu">
+                      <p>hot에 들어갈 메뉴</p>
+                      <p>hot에 들어갈 메뉴 영어표기</p>
+                      <span>
+                        hot에 들어갈 메뉴 설명 내용<br />
+                        hot에 들어갈 메뉴 설명 내용 <br />
+                        hot에 들어갈 메뉴 설명 내용
+                      </span>
+                      <a href="#">자세히보기</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="inner">
+                    <img src="./image/rhot/드립커피.png" alt="" />
+                    <div class="con_menu">
+                      <p>hot에 들어갈 메뉴</p>
+                      <p>hot에 들어갈 메뉴 영어표기</p>
+                      <span>
+                        hot에 들어갈 메뉴 설명 내용<br />
+                        hot에 들어갈 메뉴 설명 내용 <br />
+                        hot에 들어갈 메뉴 설명 내용
+                      </span>
+                      <a href="#">자세히보기</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="inner">
+                    <img src="./image/rhot/에스프레소.png" alt="" />
+                    <div class="con_menu">
+                      <p>hot에 들어갈 메뉴</p>
+                      <p>hot에 들어갈 메뉴 영어표기</p>
+                      <span>
+                        hot에 들어갈 메뉴 설명 내용<br />
+                        hot에 들어갈 메뉴 설명 내용 <br />
+                        hot에 들어갈 메뉴 설명 내용
+                      </span>
+                      <a href="#">자세히보기</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="inner">
+                    <img src="./image/rhot/옥수수.png" alt="" />
+                    <div class="con_menu">
+                      <p>hot에 들어갈 메뉴</p>
+                      <p>hot에 들어갈 메뉴 영어표기</p>
+                      <span>
+                        hot에 들어갈 메뉴 설명 내용<br />
+                        hot에 들어갈 메뉴 설명 내용 <br />
+                        hot에 들어갈 메뉴 설명 내용
+                      </span>
+                      <a href="#">자세히보기</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="inner">
+                    <img src="./image/rhot/콘파나.png" alt="" />
+                    <div class="con_menu">
+                      <p>hot에 들어갈 메뉴</p>
+                      <p>hot에 들어갈 메뉴 영어표기</p>
+                      <span>
+                        hot에 들어갈 메뉴 설명 내용<br />
+                        hot에 들어갈 메뉴 설명 내용 <br />
+                        hot에 들어갈 메뉴 설명 내용
+                      </span>
+                      <a href="#">자세히보기</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-button-next next2"></div>
+            <div class="swiper-button-prev prev2"></div>
+          </article>
+          <article class="con3">
+            <div class="swiper slide3">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <div class="inner">
+                    <img src="./image/ice/더진한망고스무디.png" alt="" />
+                    <div class="con_menu">
+                      <p>ice에 들어갈 메뉴</p>
+                      <p>ice에 들어갈 메뉴 영어표기</p>
+                      <span>
+                        ice에 들어갈 메뉴 설명 내용<br />
+                        ice에 들어갈 메뉴 설명 내용 <br />
+                        ice에 들어갈 메뉴 설명 내용
+                      </span>
+                      <a href="#">자세히보기</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="inner">
+                    <img src="./image/ice/시그니처흑당버블티.png" alt="" />
+                    <div class="con_menu">
+                      <p>ice에 들어갈 메뉴</p>
+                      <p>ice에 들어갈 메뉴 영어표기</p>
+                      <span>
+                        ice에 들어갈 메뉴 설명 내용<br />
+                        ice에 들어갈 메뉴 설명 내용 <br />
+                        ice에 들어갈 메뉴 설명 내용
+                      </span>
+                      <a href="#">자세히보기</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="inner">
+                    <img src="./image/ice/오트그린티프라페.png" alt="" />
+                    <div class="con_menu">
+                      <p>ice에 들어갈 메뉴</p>
+                      <p>ice에 들어갈 메뉴 영어표기</p>
+                      <span>
+                        ice에 들어갈 메뉴 설명 내용<br />
+                        ice에 들어갈 메뉴 설명 내용 <br />
+                        ice에 들어갈 메뉴 설명 내용
+                      </span>
+                      <a href="#">자세히보기</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="inner">
+                    <img src="./image/ice/플레인 요거 프라페.png" alt="" />
+                    <div class="con_menu">
+                      <p>ice에 들어갈 메뉴</p>
+                      <p>ice에 들어갈 메뉴 영어표기</p>
+                      <span>
+                        ice에 들어갈 메뉴 설명 내용<br />
+                        ice에 들어갈 메뉴 설명 내용 <br />
+                        ice에 들어갈 메뉴 설명 내용
+                      </span>
+                      <a href="#">자세히보기</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="inner">
+                    <img src="./image/ice/흑임자오트라떼.png" alt="" />
+                    <div class="con_menu">
+                      <p>ice에 들어갈 메뉴</p>
+                      <p>ice에 들어갈 메뉴 영어표기</p>
+                      <span>
+                        ice에 들어갈 메뉴 설명 내용<br />
+                        ice에 들어갈 메뉴 설명 내용 <br />
+                        ice에 들어갈 메뉴 설명 내용
+                      </span>
+                      <a href="#">자세히보기</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-button-next next3"></div>
+            <div class="swiper-button-prev prev3"></div>
+          </article>
+          <article class="con4">
+            <div class="swiper slide4">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <div class="inner">
+                    <img
+                      src="./image/dessert/스파이시 칠리 미트 핫도그.png"
+                      alt=""
+                    />
+                    <div class="con_menu">
+                      <p>dessert에 들어갈 메뉴</p>
+                      <p>dessert에 들어갈 메뉴 영어표기</p>
+                      <span>
+                        dessert에 들어갈 메뉴 설명 내용<br />
+                        dessert에 들어갈 메뉴 설명 내용 <br />
+                        dessert에 들어갈 메뉴 설명 내용
+                      </span>
+                      <a href="#">자세히보기</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="inner">
+                    <img src="./image/dessert/아이스크림크로플.png" alt="" />
+                    <div class="con_menu">
+                      <p>dessert에 들어갈 메뉴</p>
+                      <p>dessert에 들어갈 메뉴 영어표기</p>
+                      <span>
+                        dessert에 들어갈 메뉴 설명 내용<br />
+                        dessert에 들어갈 메뉴 설명 내용 <br />
+                        dessert에 들어갈 메뉴 설명 내용
+                      </span>
+                      <a href="#">자세히보기</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="inner">
+                    <img src="./image/dessert/카라멜버터토스트.png" alt="" />
+                    <div class="con_menu">
+                      <p>dessert에 들어갈 메뉴</p>
+                      <p>dessert에 들어갈 메뉴 영어표기</p>
+                      <span>
+                        dessert에 들어갈 메뉴 설명 내용<br />
+                        dessert에 들어갈 메뉴 설명 내용 <br />
+                        dessert에 들어갈 메뉴 설명 내용
+                      </span>
+                      <a href="#">자세히보기</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="inner">
+                    <img src="./image/dessert/콘버터토스트.png" alt="" />
+                    <div class="con_menu">
+                      <p>dessert에 들어갈 메뉴</p>
+                      <p>dessert에 들어갈 메뉴 영어표기</p>
+                      <span>
+                        dessert에 들어갈 메뉴 설명 내용<br />
+                        dessert에 들어갈 메뉴 설명 내용 <br />
+                        dessert에 들어갈 메뉴 설명 내용
+                      </span>
+                      <a href="#">자세히보기</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="inner">
+                    <img src="./image/dessert/티라미수 크로플.png" alt="" />
+                    <div class="con_menu">
+                      <p>dessert에 들어갈 메뉴</p>
+                      <p>dessert에 들어갈 메뉴 영어표기</p>
+                      <span>
+                        dessert에 들어갈 메뉴 설명 내용<br />
+                        dessert에 들어갈 메뉴 설명 내용 <br />
+                        dessert에 들어갈 메뉴 설명 내용
+                      </span>
+                      <a href="#">자세히보기</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-button-next next4"></div>
+            <div class="swiper-button-prev prev4"></div>
+          </article>
+        </div>
+      </article>
+    </section>
+
+    <section class="sec4">
+      <h2 class="sec4_h2">FRANCHISE</h2>
+      <div class="fran_main">
+        <p>찾아가는 사업설명회</p>
+        <p>
+          셀렉토커피 창업전문가가 <br />2022년 카페창업을 1:1 컨설팅해 드립니다.
+        </p>
+        <p>
+          COVID-19로<br />
+          1:1 미팅 또는 유선 사업설명회로 <br />빠르게 안내해 드립니다.
+        </p>
+        <div class="btn">
+          <button>사업설명회신청</button>
+          <a href="#"></a>
+        </div>
+      </div>
+
+      <article class="review">
+        <h2 hidden>창업후기</h2>
+        <figure>
+          <figcaption>
+            <p>삶의 피로를 풀고<br />즐거워하며,<br />쉬어 갈 수 있는 곳</p>
+            <br />
+            <p><span>SELECTO COFFEE</span></p>
+            <br />
+            <p>셀렉토 가족 스토리 인터뷰</p>
+            <p>가산점</p>
+          </figcaption>
+          <img src="./image/창업후기1.png" alt="" />
+          <a href="#">자세히보기</a>
+        </figure>
+        <figure>
+          <figcaption>
+            <p>이웃같은,<br />단골이 많이 찾아오는<br />행복한매장</p>
+            <br />
+            <p><span>SELECTO COFFEE</span></p>
+            <br />
+            <p>셀렉토 가족 스토리 인터뷰</p>
+            <p>부산사직점</p>
+          </figcaption>
+          <img src="./image/창업후기2.png" alt="" />
+          <a href="#">자세히보기</a>
+        </figure>
+        <figure>
+          <figcaption>
+            <p>
+              모든 가맹점과 본사가<br />충분히 같이 성장 할 수 있는<br />가능성
+              높은 브랜드라고 생각해요.
+            </p>
+            <br />
+            <p><span>SELECTO COFFEE</span></p>
+            <br />
+            <p>셀렉토 가족 스토리 인터뷰</p>
+            <p>안산중앙점</p>
+          </figcaption>
+          <img src="./image/창업후기3.png" alt="" />
+          <a href="#">자세히보기</a>
+        </figure>
+      </article>
+    </section>
+
+    <section class="sec5">
+      <h2>NEWS</h2>
+      <ul class="news">
+        <li class="news_list">
+          <div class="img"><img src="./image/_nverhy.jpg" alt="" /></div>
+          <div class="news_p">
+            <a href="#">Read More</a>
+            <p class="title">
+              커피전문점 셀렉토커피가 tvN 토일 드라마 슈룹의 제작 지원에
+              참여했다고 밝혔다.
+            </p>
+            <p class="main_txt">
+              커피전문점 셀렉토커피가 tvN 토일 드라마 슈룹의 제작 지원에
+              참여했다고 밝혔다. <br />지난 15일(토) 첫 방송을 시작한 슈룹(극본
+              박바라/ 연출 김형식)은 김혜수가 사고뭉치 왕자들을 위해 치열한 왕실
+              교육 전쟁에 뛰어드는 중전 화령의 파란만장 궁중 분투기를
+              <br />그린다. 시청률은 고공행진 중이다. 첫방송은 시청률 전국 가구
+              기준 평균 7.7%, 최고 9.4% 2회 시청률 전국 가구 기준 평균 9.1% 최고
+              10.4%를 기록하며 <br />전국 케이블 및 종편 포함 동 시간대 1위를
+              차지하는 기염을 토했다. 셀렉토커피는 이번에 브랜드 로고와
+              아이덴티티, 인테리어까지 전면 리뉴얼을 진행하면서,이번 슈룹
+              제작지원을 통해 새로운 얼굴을 더 많은 소비자들에게 알린다는
+              계획이다. 셀렉토커피 마케팅 담당자는 “명불허전 배우 김혜수의
+              연기와 더불어 탄탄한 시나리오로 시청률이 보장된 드라마 슈룹의
+              드라마 제작지원을 통해 셀렉토커피 브랜드를 자연스럽게 노출해
+              인지도를 한층 넓혀갈 것이다”라고 전했다. 한편, 셀렉토커피는 보다
+              경쾌하고 감각적인, 영감을 얻는 공간을 제시하고자 최근 자유분방한
+              메뉴 선택과 매일 직접 굽는 쿠키를 전면에 내세워 브랜드 리뉴얼을
+              시행했다. 전국 가맹사업도 체계적으로 진행해 나갈 계획이다.
+            </p>
+          </div>
+        </li>
+        <li class="news_list">
+          <div class="img">
+            <img src="./image/report_291_20221018173024_bpdfns.jpg" alt="" />
+          </div>
+          <div class="news_p">
+            <a href="#">Read More</a>
+            <p class="title">
+              셀렉토커피가 선선해지는 가을과 연말 시즌을 맞아 설렘과 러블리한
+              분위기에 초점을 맞춘 따뜻하고 화려한 시즌 메뉴들을 출시한다.
+            </p>
+            <p class="main_txt">
+              이번 콘셉트는 ‘과일의 다이아몬드’ 체리와 고소한 견과류 등을
+              다양하게 활용해 가을부터 연말까지 즐길 수 있는 ‘달콤한 파티’를
+              주제로 구성했다. <br />이번 시즌 메뉴는 돌체트리 밀크티, 체리쉬
+              뱅쇼, 쥬빌레 밀크 쉐이크 등 3가지다. 일반적인 커피 음료들과는
+              차별화된 콘셉트의 음료로, <br />비쥬얼이 화려하고 질 좋은 원두의
+              깊은 풍미가 특징이다. 셀렉토커피 관계자는 “날씨가 추워질수록 한
+              잔으로 포만감까지 느낄 수 있는 달콤하고 <br />부드러운 음료 수요가
+              높아진다”며, “이번 시즌에는 가을부터 겨울까지 잘 어울리는 밀크티,
+              뱅쇼와 얼.죽.아(얼어 죽어도 아이스) 파를 위한 아이스 블렌디드
+              음료까지 다채롭게 준비했으니 셀렉토커피에서 달콤한 파티를
+              즐겨보시길 바란다”라고 전했다.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="sec6">
+      <ul class="awards">
+        <li>
+          <div><img src="./image/footer/mark_11 1.png" /></div>
+          <p>식품 안전 경영</p>
+          <p>시스템인증</p>
+        </li>
+        <li>
+          <div><img src="./image/footer/mark_11 1 (1).png" alt="" /></div>
+          <p>식품 안전</p>
+          <p>시스템인증</p>
+        </li>
+        <li>
+          <div><img src="./image/footer/mark_11 1 (2).png" alt="" /></div>
+          <p>2017 소비자가 뽑은</p>
+          <p>서비스 만족대상</p>
+        </li>
+        <li>
+          <div><img src="./image/footer/mark_11 1 (3).png" alt="" /></div>
+          <p>2016 대한민국</p>
+          <p>창업대상</p>
+        </li>
+        <li>
+          <div><img src="./image/footer/mark_11 1 (4).png" alt="" /></div>
+          <p>한국프랜차이즈</p>
+          <p>모범프랜차이즈부분</p>
+          <p>수상</p>
+        </li>
+        <li>
+          <div><img src="./image/footer/mark_11 1 (5).png" alt="" /></div>
+          <p>프랜차이즈</p>
+          <p>연구개발부분 수상</p>
+        </li>
+        <li>
+          <div><img src="./image/footer/mark_11 1 (6).png" alt="" /></div>
+          <p>산업통상자원부</p>
+          <p>장관상수상</p>
+        </li>
+        <li>
+          <div><img src="./image/footer/mark_11 1 (7).png" alt="" /></div>
+          <p>산업통상자원부</p>
+          <p>세계일류상품 및</p>
+          <p>생산기업선정</p>
+        </li>
+        <li>
+          <div><img src="./image/footer/mark_11 1 (8).png" alt="" /></div>
+          <p>메인비즈</p>
+          <p>인증기업</p>
+        </li>
+        <li>
+          <div><img src="./image/footer/mark_11 1 (9).png" alt="" /></div>
+          <p>기업부설연구소</p>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <div>
+          <img src="./image/simbol.png" alt="" />
+        </div>
+        <p>
+          <span
+            >주소 : 서울시 구로구 구로3동 222-14 에이스하이엔드타워 2차
+            1402호ㆍ도로명주소 : 서울시 구로구 디지털로26길 61
+            에이스하이엔드타워 2차 1402호
+          </span>
+          <br />
+          <span
+            >전화 : 1600-5649ㆍ팩스 : 02-6340-1701ㆍ대표이사 :
+            황규연ㆍ사업자등록번호 : 109-81-99153 </span
+          ><br />
+          <span>COPYRIGHT ㈜맥스원이링크 ALL RIGHTS RESERVED. </span>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      var swiper1 = new Swiper(".slide1", {
+        navigation: {
+          nextEl: ".next1",
+          prevEl: ".prev1",
+        },
+        slidesPerView: 4,
+        spaceBetween: 30,
+      });
+      var swiper2 = new Swiper(".slide2", {
+        navigation: {
+          nextEl: ".next2",
+          prevEl: ".prev2",
+        },
+        slidesPerView: 4,
+        spaceBetween: 30,
+      });
+      var swiper3 = new Swiper(".slide3", {
+        navigation: {
+          nextEl: ".next3",
+          prevEl: ".prev3",
+        },
+        slidesPerView: 4,
+        spaceBetween: 30,
+      });
+      var swiper4 = new Swiper(".slide4", {
+        navigation: {
+          nextEl: ".next4",
+          prevEl: ".prev4",
+        },
+        slidesPerView: 4,
+        spaceBetween: 30,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,772 @@
+@charset 'utf-8';
+@import url(./my_reset.css);
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/* .nanumgothic * {
+  font-family: "Nanum Gothic", sans-serif;
+} */
+@font-face {
+  font-family: "KOTRA_BOLD-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.1/KOTRA_BOLD-Bold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GongGothicMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  font-family: "KOTRA_BOLD-Bold";
+  color: #373737;
+  --main-c1: #bb0712;
+  --main-c2: white;
+  --sub-c1: #fffbac;
+  --sub-c: #fef104;
+  --mw: 1570px;
+  --mw2: 1300px;
+}
+
+.floating {
+  /* border: 1px solid red; */
+  position: fixed;
+  right: 1rem;
+  top: 100px;
+  z-index: 9000;
+  color: white;
+  /* font-size: 0.9rem; */
+  text-align: center;
+}
+.floating .img {
+  width: 100%;
+}
+.floating .img {
+  margin-top: 0.5rem;
+  height: 30%;
+}
+
+.floating::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 430px;
+  border-radius: 90px;
+  background-color: #252525;
+  top: 0;
+  right: 0;
+  z-index: -100;
+}
+.floating p {
+  border-bottom: 1px dotted var(--main-c1);
+  /* margin: 0.5rem 0; */
+}
+.floating .top p {
+  margin: -1.5rem 0 0 0;
+  border-bottom: none;
+}
+.hd {
+  font-family: "GongGothicMedium";
+  /* border: 1px solid red; */
+  max-width: var(--mw);
+  margin: auto;
+  height: 100px;
+  position: relative;
+}
+
+.nav h1 > img {
+  /* border: 2px solid pink; */
+  height: 100px;
+  padding-top: 1rem;
+  position: relative;
+}
+.nav h1 > a {
+  /* border: 1px solid blue; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 80px;
+}
+.hd .nav {
+  /* border: 1px solid lime; */
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+}
+
+.hd .nav .gnb {
+  display: flex;
+}
+.nav .gnb > li > a {
+  position: relative;
+}
+.nav .gnb > li > a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--main-c1);
+  transition: 0.3s;
+  margin-bottom: -0.5rem;
+}
+.nav .gnb > li > a::before {
+  content: "";
+  background-color: var(--main-c1);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -12px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.3s;
+}
+.nav .gnb > li:hover a::before {
+  opacity: 1;
+}
+.nav .gnb > li:hover a::after {
+  width: 100%;
+}
+nav > .gnb > li {
+  margin: 0 1.5rem;
+}
+.nav .icons {
+  display: flex;
+}
+.nav .icons > div {
+  /* border: 1px solid red; */
+  margin-left: 0.5rem;
+}
+
+/* ---------------------------- sec1 ---------------------------- */
+
+.sec1 {
+  width: 100%;
+  height: 80vh;
+  background: url(./image/메인배너.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec1 .inner {
+  text-align: center;
+  /* border: 5px solid red; */
+  /* margin: auto; */
+  color: var(--main-c2);
+}
+
+.sec1 .inner p {
+  font-family: "GongGothicMedium";
+  /* border: 1px solid rebeccapurple; */
+  display: block;
+}
+
+.sec1 h2 {
+  font-size: 4vw;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  margin: 2rem 0;
+}
+
+.sec1 .inner a {
+  font-family: "GongGothicMedium";
+  /* position: absolute; */
+  display: block;
+  background-color: var(--main-c1);
+  color: var(--main-c2);
+  width: 180px;
+  height: 60px;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 28px;
+  transition: 0.5s;
+  margin: 100px auto 0;
+}
+
+.sec1 .inner a:hover {
+  background-color: white;
+  color: var(--main-c1);
+}
+
+/* ---------------------------- sec2 ---------------------------- */
+.sec2 {
+  border: 1px solid pink;
+  max-width: var(--mw2);
+  /* width: 100%; */
+  margin: 50px auto;
+  /* position: relative; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sec2 h2 {
+  color: var(--main-c1);
+  font-size: 42px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin: 1rem;
+}
+
+.sec2 h2::after {
+  content: "";
+  position: absolute;
+  justify-content: space-between;
+  background-color: var(--main-c1);
+  width: 10rem;
+  height: 2px;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sec2 .sec2_lef {
+  /* border: 1px solid red; */
+  width: 30%;
+  text-align: center;
+  padding: 2rem 0;
+}
+.sec2_right .dec,
+.sec2 button {
+  font-family: "GongGothicMedium";
+}
+.sec2 .sec2_right {
+  /* border: 1px solid skyblue; */
+  width: 70%;
+  position: relative;
+  padding: 2rem 0;
+}
+.sec2 .img {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  background-color: #f5f5f5;
+}
+.sec2 .btn3 {
+  line-height: 60px;
+}
+
+.sec2_right article {
+  /* border: 1px solid green; */
+  margin-top: 120px;
+  padding: 10px;
+}
+
+.sec2_right .btn1::after,
+.sec2_right .btn2::after,
+.sec2_right .btn3::after {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  background-color: #fffbac;
+  z-index: -1;
+  left: 25%;
+}
+
+/* .sec2_right .btn1::after {
+  left: 25%;
+}
+.sec2_right .btn2::after {
+}
+.sec2_right .btn3::after {
+} */
+
+.sec2_right button.on::after {
+  background-color: var(--sub-c);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+.sec2_right button {
+  font-size: 42px;
+  position: absolute;
+  top: 0;
+  margin: 20px;
+  left: 50px;
+  background-color: transparent;
+  border: transparent;
+}
+.sec2_right button.on + article {
+  display: block;
+}
+.sec2_right article {
+  display: none;
+}
+.sec2 .sec2_right .btn1 {
+  left: 0;
+}
+.sec2 .sec2_right .btn2 {
+  left: 200px;
+}
+.sec2 .sec2_right .btn3 {
+  left: 400px;
+}
+
+.sec2_right .read_more {
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: var(--main-c1);
+  background-color: transparent;
+  border: 3px solid var(--main-c1);
+  width: 260px;
+  height: 70px;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 65px;
+  transition: 0.3s;
+}
+.sec2_right .read_more:hover {
+  background-color: var(--main-c1);
+  color: white;
+}
+
+/* ---------------------------- sec3 ---------------------------- */
+
+.sec3 {
+  /* border: 5px solid red; */
+  margin: auto;
+}
+.sec3 .menu_list {
+  max-width: var(--mw2);
+  /* border: 3px solid skyblue; */
+  margin: auto;
+}
+.sec3 h2 {
+  /* border: 1px solid lime; */
+  color: var(--main-c1);
+  font-size: 42px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin: 1rem;
+}
+.sec3 h2::after {
+  content: "";
+  position: absolute;
+  justify-content: space-between;
+  background-color: var(--main-c1);
+  width: 8rem;
+  height: 2px;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sec3 .menu_btn {
+  /* border: 1px solid brown; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+.sec3 .menu_btn:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  bottom: 0;
+}
+.menu_btn button {
+  font-size: 1.2rem;
+  font-family: "KOTRA_BOLD-Bold";
+  background-color: #999999;
+  width: 6rem;
+  height: 3rem;
+  border-radius: 20px 20px 0 0;
+  transition: 0.5s;
+  margin: 1rem 0 0 0.3rem;
+  padding-top: 0.5rem;
+  border: transparent;
+}
+
+.sec3 .menu_btn button.on {
+  background-color: #252525;
+  color: white;
+}
+.sec3 .menu article {
+  position: relative;
+  display: none;
+}
+.sec3 .menu article.on {
+  display: block;
+}
+.swiper-button-prev {
+  left: -100px;
+  right: auto;
+}
+.swiper-button-next {
+  right: -100px;
+  left: auto;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  width: 70px;
+}
+.menu .swiper-button-prev::after {
+  width: 100%;
+  color: transparent;
+  background-image: url(./image/arrow_left.svg);
+  background-repeat: no-repeat;
+}
+.swiper-button-next::after {
+  width: 100%;
+  color: transparent;
+  background-repeat: no-repeat;
+  background-image: url(./image/arrow_right.svg);
+}
+
+.slide1 .inner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 1rem;
+  background-image: url(./image/product_view_icon_new\ 2.png);
+  background-repeat: no-repeat;
+  /* border: 3px solid blue !important; */
+}
+.swiper-slide .inner {
+  /* border: 3px solid pink; */
+  box-shadow: 0 0 10px rgba(37, 37, 37, 0.3);
+  margin: 2rem 0.5rem;
+  padding-bottom: 1rem;
+  height: 24vw;
+  position: relative;
+}
+.swiper-slide .inner > img {
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+  /* border: 1px solid lime; */
+  /* width: 50%; */
+  height: 65%;
+}
+
+.con1 .inner div,
+.con2 .inner div,
+.con3 .inner div,
+.con4 .inner div {
+  /* border: 1px solid lightblue; */
+  text-align: center;
+  line-height: 1rem;
+}
+.menu .con_menu p {
+  line-height: 2rem;
+}
+.menu .con_menu span {
+  border: 1px solid lime;
+  text-align: center;
+  font-size: 0.6rem;
+}
+.sec3 .con1 {
+  position: relative;
+}
+.sec3 .con_menu {
+  /* border: 1px solid blue; */
+  padding-top: 1rem;
+}
+.swiper-slide .inner a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: transparent;
+}
+
+/* ---------------------------- sec4 ---------------------------- */
+
+.sec4 {
+  /* border: 5px solid pink; */
+  max-width: var(--mw2);
+  margin: 50px auto;
+  /* position: relative; */
+}
+
+.sec4 > h2 {
+  font-size: 42px;
+  color: var(--main-c1);
+  display: block;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin: 1rem;
+}
+.sec4 h2::after {
+  content: "";
+  position: absolute;
+  justify-content: space-between;
+  background-color: var(--main-c1);
+  width: 15rem;
+  height: 2px;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sec4 .fran_main {
+  background-image: url(./image/사업설명회배경.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  border: 5px solid rebeccapurple;
+  text-align: center;
+  height: 100%;
+}
+
+.sec4 .fran_main p {
+  font-family: "GongGothicMedium";
+  display: block;
+  color: white;
+  margin: 1rem;
+}
+.sec4 button {
+  font-family: "GongGothicMedium";
+  /* position: absolute; */
+  display: block;
+  background-color: white;
+  color: #252525;
+  width: 160px;
+  height: 40px;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 35px;
+  transition: 0.5s;
+  margin: auto;
+  cursor: pointer;
+  border: transparent;
+  margin-bottom: 1rem;
+}
+
+.sec4 button:hover {
+  background-color: #373737;
+  color: white;
+}
+
+.sec4 .review {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.sec4 img {
+  width: 100%;
+}
+.sec4 .review figure {
+  width: calc(100% / 3);
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.sec4 .review figure figcaption {
+  font-family: "GongGothicMedium";
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  z-index: 20;
+  margin-top: 25%;
+  transition: 0.3s;
+  /* border: 4px solid blue; */
+  width: 100%;
+  height: 100%;
+  color: white;
+  opacity: 0;
+  line-height: 1.2;
+}
+.review span {
+  font-size: 1.5rem;
+  color: var(--main-c1);
+}
+/* .sec4 .review figure figcaption p:nth-of-type(1) {
+  font-size: 1.25rem;
+} */
+.sec4 .review figure img {
+  transition: 0.5s;
+}
+.sec4 .review figure a {
+  position: absolute;
+  /* border: 5px dotted red; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  z-index: 50;
+}
+.sec4 .review figure:hover img {
+  filter: brightness(40%);
+}
+.sec4 .review figure:hover figcaption {
+  opacity: 1;
+}
+
+/* ---------------------------- sec5 ---------------------------- */
+
+.sec5 {
+  max-width: var(--mw2);
+  margin: 3rem auto;
+  /* border: 5px solid pink; */
+}
+
+.sec5 h2 {
+  /* border: 5px solid blue; */
+  font-size: 42px;
+  text-align: center;
+  margin: 2rem;
+  color: var(--main-c1);
+  position: relative;
+}
+
+.sec5 h2::after {
+  content: "";
+  position: absolute;
+  justify-content: space-between;
+  background-color: var(--main-c1);
+  width: 8rem;
+  height: 2px;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.news {
+  /* border: 1px solid red; */
+}
+
+.news .news_list {
+  display: flex;
+  padding: 2rem 0;
+  position: relative;
+  height: 300px;
+  border-top: 1px dotted rgba(187, 7, 18, 0.3);
+}
+
+.news .news_list:nth-of-type(2) {
+  border-bottom: 1px dotted rgba(187, 7, 18, 0.3);
+}
+
+.news_list .news_p {
+  /* border: 5px solid green; */
+  width: 70%;
+  /* padding: 1rem; */
+  position: relative;
+}
+.news_p .title,
+.main_txt {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.news_p .main_txt {
+  font-family: "GongGothicMedium";
+  padding-top: 1rem;
+  font-size: 2rem;
+}
+.sec5 .news_list .img {
+  /* border: 5px solid purple; */
+  width: 40%;
+}
+.sec5 .news_p a {
+  display: inline-block;
+  color: var(--main-c1);
+  border-bottom: 1px solid var(--main-c1);
+  margin-top: 4rem;
+  transition: 0.3s;
+  position: absolute;
+  bottom: 0;
+}
+
+.news_p a:hover {
+  margin-left: 1rem;
+}
+
+.news_p a:hover ~ p {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+.sec5 img {
+  display: inline-block;
+  height: 100%;
+}
+.news_list .img {
+}
+.news_p .title {
+  font-family: "GongGothicMedium";
+  font-size: 34px;
+}
+.news_p .main_txt {
+  font-size: 0.75rem;
+}
+/* ---------------------------- sec6 ---------------------------- */
+
+.sec6 {
+  max-width: var(--mw2);
+  margin: auto;
+}
+
+.awards {
+  display: flex;
+}
+
+.awards li {
+  width: calc(100% / 10);
+  position: relative;
+  margin: 0 1rem 1rem;
+}
+
+.awards div {
+  padding: 0 0.8rem;
+  height: 50%;
+}
+.awards img {
+  width: 70%;
+}
+.awards p {
+  text-align: center;
+}
+.awards li {
+  line-height: 0.9rem;
+  font-size: 10px;
+}
+/* ---------------------------- footer ---------------------------- */
+
+footer {
+  font-family: "GongGothicMedium";
+  background-color: #252525;
+  height: 100px;
+}
+.footer {
+  max-width: var(--mw2);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer p {
+  color: white;
+  width: 100%;
+  font-size: 0.6rem;
+  line-height: 1.2rem;
+}
+.footer img {
+  width: 40%;
+  margin-top: 1rem;
+}
