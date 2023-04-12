@@ -203,7 +203,7 @@ nav > .gnb > li {
 
 /* ---------------------------- sec2 ---------------------------- */
 .sec2 {
-  border: 1px solid pink;
+  /* border: 1px solid pink; */
   max-width: var(--mw2);
   /* width: 100%; */
   margin: 50px auto;
@@ -473,7 +473,7 @@ nav > .gnb > li {
   line-height: 2rem;
 }
 .menu .con_menu span {
-  border: 1px solid lime;
+  /* border: 1px solid lime; */
   text-align: center;
   font-size: 0.6rem;
 }
@@ -528,7 +528,7 @@ nav > .gnb > li {
   background-position: center;
   background-size: cover;
   width: 100%;
-  border: 5px solid rebeccapurple;
+  /* border: 5px solid rebeccapurple; */
   text-align: center;
   height: 100%;
 }
